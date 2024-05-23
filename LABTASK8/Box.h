@@ -1,29 +1,34 @@
-#pragma one
+#pragma once
+
 #include <iostream>
+
 using namespace std;
 
-class Box {
+class Box  
+{
 public:
-    Box();
 
-    box(const double newLength,c const double newBredth, const double newHeight);
+   Box();
 
-    ~Box();
+   Box(const double newLength, const double newBreadth, const double newHeight);
 
-    double GetVolume();
+   ~Box();
 
-    void SetLength(double len);
+   double GetVolume();
 
-    void SetBredth(double bre);
+   void SetLength(double len);
 
-    void SetHeight(double hei);
+   void SetBreadth(double bre);
 
-    //Overload + operator to add two Box objects.
-    Box operator+(const Box& b);
+   void SetHeight(double hei);
+   
+                                   //overload + operator to add two Box objects
+   Box operator + (const Box& b);
 
-private:
-    double lenghth; //Length of box
-    double bredth;  //Bredth of abox
-    double height:  // height of a box
+ private:
+        double length;       //length of a box
+        double breadth;      //breadth of a box
+        double height;       //height of  a box
 
-    };
+};
+
